@@ -6,19 +6,23 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-      <h1>Creature Creator</h1>
+      <h1>egg machine</h1>
       
-      <p>What happens when you combine these two animals?</p>
-      <img src="https://www.kasandbox.org/programming-images/animals/shark.png" height="150" alt="shark">
-      <img src="https://www.kasandbox.org/programming-images/animals/spider.png" height="150" alt="spider">
+      <p>What happens when you combine these two things?</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Jake_the_Dog_character.svg/960px-Jake_the_Dog_character.svg.png" height="150" alt="jake the dog">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYpMkVMjx5m2Wp-rfsidbwj2Ea4IVNnhXVQ&s" height="150" alt="egg">
       
-      <p class="result">You get a sharkspider!</p>
+      <p class="result">You get jake the egg!</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
- 
-
-
- 
+      var newP = $("<p>");
+      newP.text("mmm, egg in me");
+      $("body").append(newP);
+      var newI = $("<img>");
+      newI.attr("src","https://preview.redd.it/nothing-just-egg-in-me-v0-fnhlal4h72kb1.jpg?auto=webp&s=e86113086eeaa8061aa542168c31eff813274163").attr("width","400");
+      $("body").append(newI);
+      newP.addClass("egg");
+      newI.addClass("jakegg");
     </script>
   </body>
 </html>
